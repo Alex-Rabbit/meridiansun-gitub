@@ -1,0 +1,76 @@
+/*
+--------------------------------------------------
+  ./src/scss/ieps_framework/modules/_btns.scss
+            Module des boutons
+--------------------------------------------------
+*/
+
+// LES BOUTONS
+//----------------
+.btn {
+  display: $btnDsiplay;
+  text-decoration: $btnTextDecoration;
+  border-radius: $btnBorderRadius;
+  width: $btnWidth;
+  &-primary {
+    padding: $btnPrimaryPadding;
+    font-size: $btnFontSize;
+    background: $btnPrimaryBackground;
+    color: $btnPrimaryColor;
+    font-family: $btnPrimaryFontFamily;
+    margin-right: $btnPrimaryMarginRight;
+    cursor: pointer;
+    &.active {
+      background-color: $backgroundPage;
+    }
+    &:hover {
+      background-color: $backgroundPage;
+    }
+  }
+  &-secondary {
+    padding: $btnSecondaryPadding;
+    font-size: $btnSecondaryFontSize;
+    background: $btnSecondaryBackground;
+    color: $btnSecondaryColor;
+    font-family: $btnSecondaryFontFamily;
+    margin-right: $btnSecondaryMarginRight;
+    cursor: pointer;
+    &:hover {
+      color: $fontFooter;
+    }
+  }
+}
+/*
+--------------------------------------------------
+    Bandeau qui dépasse de la boite-fixe
+--------------------------------------------------
+*/
+@each $etiquette, $dimension in $grilleBreakPoints {
+  @media screen and (min-width: $dimension){
+    .bandeau-#{$etiquette} {
+      background: #b05a5a;
+      line-height: 40px;
+      width: calc(100% + 1em + 30px);
+      position: relative;
+      left: calc(-.5em - 15px);
+      &:before, &:after {
+        content: '';
+        display: block;
+        background: darken($couleur1, 15%);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        bottom: -10px;
+        z-index: -1;
+      }
+      &:before {
+        left: 0;
+        transform: skewY(45deg);
+      }
+      &:after {
+        right: 0;
+        transform: skewY(-45deg);
+      }
+    }
+  }
+}

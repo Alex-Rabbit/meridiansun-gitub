@@ -1,0 +1,25 @@
+/*
+--------------------------------------------------
+  ./src/scss/ieps_framework/modules/_visibilites.scss
+            Module de la visibilites
+--------------------------------------------------
+*/
+
+/*
+.grille qui correspond au conteneur et qui crée un système de 12 colonnes
+  avec une goutière de 1em
+*/
+@each $etiquette, $dimension in $grilleBreakPoints {
+  .#{$etiquette}-visible {
+    display: none;
+  }
+
+  @media screen and (min-width: #{$dimension}){
+    .#{$etiquette}-cache {
+      display: none;
+    }
+    .#{$etiquette}-visible {
+      display: block;
+    }
+  }
+}

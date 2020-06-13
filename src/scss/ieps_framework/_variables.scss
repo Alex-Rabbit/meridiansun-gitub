@@ -1,0 +1,137 @@
+/*
+--------------------------------------------------
+  ./src/scss/ieps_framework/_variables.scss
+        Variables du framework IEPS CSS
+--------------------------------------------------
+*/
+// VARIABLES DES POLICES
+//--------------------------
+  $fontText:  'Merriweather', serif;
+  $fontTitle: 'Market Deco', Regular;
+  $fontLogo:  'Kaushan Script', cursive;
+
+  // VARIABLES DES COULEURS
+//--------------------------
+  $colorBandeau: #b05a5a;
+  $fontColorPrimary: #6b6b6b;
+  $fontColorSecondary: #a0a0a0;
+  $fontFooter: #999;
+  $backgroundFooter: #191919;
+  $backgroundPage: #2e2e2e;
+//---------------------------
+  $couleur1: #b05a5a;
+  $couleur2: white;
+  $couleurNeutre: #6b6b6b;
+  $couleurNeutreFoncee: rgb(51,51,51);
+
+  // MODULE DE LA BOITE
+//------------------------
+  $boiteFixeDimension: 1040px;
+
+  // MODULE DE LA GRILLE
+//------------------------
+$grilleNombredeColonnes: 12;
+$grilleGoutiere:         1em;
+$grilleBreakPoints: ('xs': '0',
+                      's': '600px',
+                      'm': '800px',
+                      'l': '1000px',
+                     'xl': '1200px');
+
+  // MODULE DES MENUS
+//----------------------
+// MENU SLIDER
+//----------------
+  // LE BOUTON
+$menuSliderBtnTop: 1em;
+$menuSliderBtnLeft: 4em;
+$menuSliderBtnFondCouleur: $couleur1;
+$menuSliderBtnTexteCouleur: $couleur2;
+$menuSliderBtnPadding: .5em;
+  // HOVER SUR LE BOUTON
+$menuSliderBtnHoverFondCouleur: darken($couleur1, 20%);
+$menuSliderBtnHoverTexteCouleur: $couleur2;
+  // LE MENU
+$menuSliderMenuLargeur: 200px;
+$menuSliderMenuFondCouleur: lighten($couleur1, 20%);
+$menuSliderMenuHauteur: 100vh;
+    // LES LIENS DU MENU
+$menuSliderLiensFondCouleur: $couleur1;
+$menuSliderLiensTexteCouleur: $couleurNeutre;
+$menuSliderLiensPadding: .5em;
+    // HOVER SUR LES LIENS DU MENU
+$menuSliderLiensHoverFondCouleur: darken($couleur1, 10%);
+$menuSliderLiensHoverTexteCouleur: $couleur2;
+
+// MENU HORIZONTAL
+//----------------
+  // UL DU MENU
+$menuHorizLiensAlignement: center;
+    // LI DU MENU
+$menuHorizLiensGrow: 0.0;
+$menuHorizLiensMarge: 1px;
+$menuHorizLiensTexteAlignement: center;
+    // LI ACTIVF DU MENU
+$menuHorizLiensActifFondCouleur: darken($couleur1, 0%);
+$menuHorizLiensActifTexteCouleur: $couleur2;
+      // LES LIENS DU MENU
+$menuHorizLiensFondCouleur: $couleur1;
+$menuHorizLiensTexteCouleur: $couleur2;
+$menuHorizLiensPadding: 0rem;
+      // HOVER SUR LES LIENS DU MENU
+$menuHorizLiensHoverFondCouleur: darken($couleur1, 5%);
+$menuHorizLiensHoverTexteCouleur: $couleur2;
+    // LES LIENS DU SOUS-MENU DROPDOWN
+$menuDropdownLiensFondCouleur: lighten($couleur1, 20%);
+$menuDropdownLiensTexteCouleur: $couleur2;
+$menuDropdownLiensPadding: 1rem;
+    // HOVER SUR LES LIENS DU SOUS-MENU
+$menuDropdownLiensHoverFondCouleur: lighten($couleur1, 10%);
+$menuDropdownLiensHoverTexteCouleur: $couleur2;
+
+//    POLAROID
+//----------------
+// Item
+$PolaroidAlignItem: start;
+  // Polaroid
+$polaroidBoxShadow: 5px 5px 10px -10px rgba(0,0,0,0.75);
+$polaroidBorderRadius: 5px;
+$polaroidMargin: 0;
+$polaroidBackground: white;
+$polaroidPadding: 5px;
+    // Figcaption
+$polaroidFigcaptionPadding: .6em;
+$polaroidFigcaptionFontSize: .7em;
+
+//   IFRAME RESPONSIVE
+//----------------------
+// Figure
+$iframeResponsivePaddingBottom: 56.25%;
+  // Figcaption
+$iframeResponsiveBorder: none;
+
+// VARIABLES DES FORMS
+//----------------------
+// LES BOUTONS
+//----------------
+// BTN
+$btnDsiplay: inline-block;
+$btnTextDecoration: none;
+$btnWidth: auto;
+$btnBorderRadius: 5px;
+
+// BTN-PRIMARY
+$btnPrimaryPadding: .2em .6em .2em .6em;
+$btnFontSize: .8em;
+$btnPrimaryBackground: $fontColorPrimary;
+$btnPrimaryColor: white;
+$btnPrimaryFontFamily: $fontText;
+$btnPrimaryMarginRight: .4em;
+
+// BTN-SECONDARY
+$btnSecondaryPadding: .4em;
+$btnSecondaryFontSize: 1em;
+$btnSecondaryBackground: $backgroundPage;
+$btnSecondaryColor: white;
+$btnSecondaryFontFamily: $fontText;
+$btnSecondaryMarginRight: 1em;

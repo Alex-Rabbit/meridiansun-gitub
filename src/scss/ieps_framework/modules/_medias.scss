@@ -1,0 +1,43 @@
+/*
+--------------------------------------------------
+  ./src/scss/ieps_framework/modules/_polaroid.scss
+            Module des medias
+--------------------------------------------------
+*/
+/*
+--------------------------------------------------
+    IFRAME DES POLAROIDS
+--------------------------------------------------
+*/
+.itemPolaroid {
+  align-items: $PolaroidAlignItem;
+  & .figure-polaroid {
+    box-shadow: $polaroidBoxShadow;
+    border-radius: $polaroidBorderRadius;
+    margin: $polaroidMargin;
+    background: $polaroidBackground;
+    padding: $polaroidPadding;
+    figcaption {
+      padding: $polaroidFigcaptionPadding;
+      font-size: $polaroidFigcaptionFontSize;
+    }
+  }
+}
+/*
+--------------------------------------------------
+    IFRAME RESPONSIVE
+--------------------------------------------------
+*/
+.figure-iframeResponsive {
+  overflow: hidden;
+  padding-bottom: $iframeResponsivePaddingBottom;
+  position: relative;
+  & iframe {
+    border: $iframeResponsiveBorder;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }
+}

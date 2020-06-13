@@ -1,0 +1,16 @@
+/*
+--------------------------------------------------
+  ./src/scss/ieps_framework/modules/_boites.scss
+            Module de la boite
+--------------------------------------------------
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.boite-fixe {
+  width: 100%;
+  max-width: $boiteFixeDimension;
+  margin: auto;
+}

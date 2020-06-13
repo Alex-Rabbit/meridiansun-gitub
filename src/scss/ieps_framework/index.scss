@@ -1,0 +1,15 @@
+/*
+--------------------------------------------------
+      ./src/scss/ieps_framework/index.scss
+      Fichier racine du framework IEPS CSS
+--------------------------------------------------
+*/
+
+@import 'variables';
+@import 'modules/boites';
+@import 'modules/utils';
+@import 'modules/menus';
+@import 'modules/forms';
+@import 'modules/medias';
+@import 'modules/grille';
+@import 'modules/visibilites';
